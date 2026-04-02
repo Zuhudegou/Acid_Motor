@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DAP-Link Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceFolder}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "device": "STM32F407VE",  
+            "configFiles": [
+                "interface/cmsis-dap.cfg",   
+                "target/stm32f4x.cfg"        
+            ],
+            
+            "showDevDebugOutput": "raw",
+            "runToEntryPoint": "main"    
+        }
+    ]
+}
