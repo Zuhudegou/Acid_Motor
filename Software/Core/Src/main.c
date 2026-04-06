@@ -126,7 +126,6 @@ int main(void)
 
       g_control_output = FuzzyPID_Update(&g_fuzzy_pid, g_setpoint, g_feedback, dt_s);
 
-      /* 用一阶对象近似反馈，方便在线观察控制过程。 */
       g_feedback += 0.05f * ((g_control_output * 0.01f) - g_feedback);
     }
   }
