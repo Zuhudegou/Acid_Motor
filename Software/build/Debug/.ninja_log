@@ -1,0 +1,23 @@
+# ninja log v7
+1	14	1775529930003787760	CMakeFiles/Acid_Motor.dir/startup_stm32g431xx.s.obj	b1d8d0c48c4d867a
+1	66	1775529930003621695	CMakeFiles/Acid_Motor.dir/Core/Src/sysmem.c.obj	6756e2f2d044deb3
+1	69	1775529930003711680	CMakeFiles/Acid_Motor.dir/Core/Src/syscalls.c.obj	24d9fd2ecf16b3b2
+1	124	1775529930003456972	CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_it.c.obj	510b2acd30a960ba
+1	135	1775529930003391512	CMakeFiles/Acid_Motor.dir/Core/Src/gpio.c.obj	bff90ce6b4729dc5
+1	137	1775529930003929611	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj	47f4c2486f1e2987
+1	141	1775529930004120572	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj	367eb8cdad8b1903
+1	142	1775529930002730361	CMakeFiles/Acid_Motor.dir/Core/Src/main.c.obj	14b72a4db3fe33b3
+1	145	1775529930003868248	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj	2647004e9822aff1
+1	149	1775529930003558489	CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_hal_msp.c.obj	48c4cd34f042d2cc
+4	158	1775529930006418696	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj	9fe0babebf63e88e
+1	159	1775529930004012553	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj	2a7de824320011b9
+5	163	1775529930007725990	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj	b2a68e9496f90773
+16	166	1775529930018971402	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj	d0f4d1bb23817f35
+66	181	1775529930068728428	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj	cf1e7989d7ebab17
+4	182	1775529930006796691	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj	a43855ac408a300d
+2	196	1775529930004470084	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj	c555c50cd414c3a1
+2	199	1775529930004541766	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj	e0e8908ab59d951e
+5	201	1775529930007123231	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj	c0905c59e976e266
+69	203	1775529930070728370	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj	e1332cda20ca191
+2	204	1775529930004241334	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj	2bfd5ea6aebece86
+204	227	1775529930205724417	Acid_Motor.elf	d26ee7846012ae51

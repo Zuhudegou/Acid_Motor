@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/acid/\u4e0b\u8f7d/Project/Acid_Motor/Software/build/cmake_install.cmake",
+		"/home/acid/\u4e0b\u8f7d/Project/Acid_Motor/Software/build/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
