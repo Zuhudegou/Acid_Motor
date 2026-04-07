@@ -18,10 +18,19 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "gpio.h"
+#include "opamp.h"
+#include "spi.h"
+#include "tim.h"
+#include "usart.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "bldc_foc.h"
+#include "ma600_encoder.h"
+#include "motor_uart_control.h"
+#include "uart_debug.h"
 
 /* USER CODE END Includes */
 
@@ -43,12 +52,16 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+static uint32_t g_last_feedback_tick = 0U;
+static float g_last_mech_angle = 0.0f;
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+static void App_InitMotorControl(void);
+static void App_ProcessSlowLoop(void);
 
 /* USER CODE END PFP */
 
@@ -86,7 +99,16 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_ADC1_Init();
+  MX_ADC2_Init();
+  MX_OPAMP1_Init();
+  MX_OPAMP2_Init();
+  MX_SPI1_Init();
+  MX_TIM1_Init();
+  MX_USART1_UART_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+  App_InitMotorControl();
 
   /* USER CODE END 2 */
 
@@ -97,6 +119,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    App_ProcessSlowLoop();
+    DebugUART_Process();
+    MotorUart_ProcessForward();
+    (void)MotorUart_ProcessPacket();
   }
   /* USER CODE END 3 */
 }
@@ -148,6 +174,99 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+static void App_InitMotorControl(void)
+{
+  if (HAL_OPAMP_Start(&hopamp1) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_OPAMP_Start(&hopamp2) != HAL_OK) {
+    Error_Handler();
+  }
+
+  if (HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED) != HAL_OK) {
+    Error_Handler();
+  }
+
+  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3) != HAL_OK) {
+    Error_Handler();
+  }
+
+  if (HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3) != HAL_OK) {
+    Error_Handler();
+  }
+
+  MA600_Init();
+  FOC_Init();
+  FOC_SetEnable(false);
+  MotorUart_Init();
+  DebugUART_Init(&huart3);
+  DebugUART_Printf("FOC runtime initialized\r\n");
+
+  if (HAL_ADCEx_InjectedStart_IT(&hadc1) != HAL_OK) {
+    Error_Handler();
+  }
+  if (HAL_ADCEx_InjectedStart_IT(&hadc2) != HAL_OK) {
+    Error_Handler();
+  }
+
+  g_last_mech_angle = MA600_ReadAngleRad();
+  g_last_feedback_tick = HAL_GetTick();
+}
+
+static void App_ProcessSlowLoop(void)
+{
+  const float pi = 3.141592654f;
+  const float two_pi = 6.283185307f;
+  uint32_t now = HAL_GetTick();
+
+  if (now == g_last_feedback_tick) {
+    return;
+  }
+
+  float dt = (float)(now - g_last_feedback_tick) * 0.001f;
+  float mech_angle = MA600_ReadAngleRad();
+  float dtheta = mech_angle - g_last_mech_angle;
+
+  while (dtheta > pi) {
+    dtheta -= two_pi;
+  }
+  while (dtheta < -pi) {
+    dtheta += two_pi;
+  }
+
+  FOC_UpdateFeedback(mech_angle, dtheta / dt);
+  FOC_CascadeLoopCallback();
+
+  g_last_mech_angle = mech_angle;
+  g_last_feedback_tick = now;
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  MotorUart_RxCpltCallback(huart);
+}
+
+void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef *hadc)
+{
+  if (hadc->Instance == ADC1) {
+    FOC_CurrentLoopCallback(hadc);
+  }
+}
 
 /* USER CODE END 4 */
 

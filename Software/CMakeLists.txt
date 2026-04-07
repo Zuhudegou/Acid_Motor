@@ -44,12 +44,20 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
+    # FOC Motor Control Driver
+    Core/Src/bldc_foc.c
+    # Debug monitoring via UART1 with FIFO
+    Core/Src/uart_debug.c
+    Core/Src/circular_buffer.c
+    # UART Serial Control
+    Core/Src/motor_uart_control.c
+    # MA600 Absolute Magnetic Encoder
+    Core/Src/ma600_encoder.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined include paths
+    Core/Inc
 )
 
 # Add project symbols (macros)
