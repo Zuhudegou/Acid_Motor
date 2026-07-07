@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Acid_Motor
+# Project: MOTOR
 # Configurations: Debug
 # =============================================================================
 
@@ -39,212 +39,250 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/acid/下载/Project/Acid_Motor/Software/build/Debug/
+cmake_ninja_workdir = /home/acid/Downloads/Project/motor_test_ws/build/Debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Acid_Motor
+# Object build statements for EXECUTABLE target MOTOR
 
 
 #############################################
-# Order-only phony target for Acid_Motor
+# Order-only phony target for MOTOR
 
-build cmake_object_order_depends_target_Acid_Motor: phony || cmake_object_order_depends_target_STM32_Drivers
+build cmake_object_order_depends_target_MOTOR: phony || cmake_object_order_depends_target_STM32_Drivers
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/main.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/main.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/Core/Src/main.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Core/Src/main.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/main.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/Core/Src/main.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/Core/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/gpio.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/gpio.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/Core/Src/stm32g4xx_it.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Core/Src/stm32g4xx_it.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/gpio.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/Core/Src/stm32g4xx_it.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/Core/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/adc.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/adc.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/Core/Src/stm32g4xx_hal_msp.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Core/Src/stm32g4xx_hal_msp.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/adc.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/Core/Src/stm32g4xx_hal_msp.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/Core/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/opamp.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/opamp.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/Core/Src/sysmem.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Core/Src/sysmem.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/opamp.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/Core/Src/sysmem.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/Core/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/spi.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/spi.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/Core/Src/syscalls.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Core/Src/syscalls.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/spi.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/Core/Src/syscalls.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/Core/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/tim.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/tim.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/startup_stm32g431xx.s.obj: ASM_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/startup_stm32g431xx.s || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/tim.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
-
-build CMakeFiles/Acid_Motor.dir/Core/Src/usart.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/usart.c || cmake_object_order_depends_target_Acid_Motor
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/usart.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
-
-build CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_it.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/stm32g4xx_it.c || cmake_object_order_depends_target_Acid_Motor
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_it.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
-
-build CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_hal_msp.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/stm32g4xx_hal_msp.c || cmake_object_order_depends_target_Acid_Motor
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_hal_msp.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
-
-build CMakeFiles/Acid_Motor.dir/Core/Src/sysmem.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/sysmem.c || cmake_object_order_depends_target_Acid_Motor
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/sysmem.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
-
-build CMakeFiles/Acid_Motor.dir/Core/Src/syscalls.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/syscalls.c || cmake_object_order_depends_target_Acid_Motor
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/syscalls.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
-
-build CMakeFiles/Acid_Motor.dir/startup_stm32g431xx.s.obj: ASM_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/startup_stm32g431xx.s || cmake_object_order_depends_target_Acid_Motor
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/startup_stm32g431xx.s.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/startup_stm32g431xx.s.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -g
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/bldc_foc.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/bldc_foc.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/App/util/motor_util.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/util/motor_util.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/bldc_foc.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/util/motor_util.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App/util
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/uart_debug.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/uart_debug.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/App/motor_board.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/motor_board.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/uart_debug.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/motor_board.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/circular_buffer.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/circular_buffer.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/App/motor_hal.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/motor_hal.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/circular_buffer.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/motor_hal.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/motor_uart_control.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/motor_uart_control.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/App/board/board_stm32g431.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/board/board_stm32g431.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/motor_uart_control.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/board/board_stm32g431.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App/board
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
-build CMakeFiles/Acid_Motor.dir/Core/Src/ma600_encoder.c.obj: C_COMPILER__Acid_Motor_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/ma600_encoder.c || cmake_object_order_depends_target_Acid_Motor
+build CMakeFiles/MOTOR.dir/Lib/Motor/motor.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Lib/Motor/motor.c || cmake_object_order_depends_target_MOTOR
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = CMakeFiles/Acid_Motor.dir/Core/Src/ma600_encoder.c.obj.d
+  DEP_FILE = CMakeFiles/MOTOR.dir/Lib/Motor/motor.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Acid_Motor.dir/Core/Src
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/Lib/Motor
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
+
+build CMakeFiles/MOTOR.dir/Lib/Motor/motor_control.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Lib/Motor/motor_control.c || cmake_object_order_depends_target_MOTOR
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MOTOR.dir/Lib/Motor/motor_control.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/Lib/Motor
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
+
+build CMakeFiles/MOTOR.dir/App/Lcd/lcd_drv.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/Lcd/lcd_drv.c || cmake_object_order_depends_target_MOTOR
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/Lcd/lcd_drv.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App/Lcd
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
+
+build CMakeFiles/MOTOR.dir/App/Lcd/lcd_font.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/Lcd/lcd_font.c || cmake_object_order_depends_target_MOTOR
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/Lcd/lcd_font.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App/Lcd
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
+
+build CMakeFiles/MOTOR.dir/App/UI/motor_ui.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/UI/motor_ui.c || cmake_object_order_depends_target_MOTOR
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/UI/motor_ui.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App/UI
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
+
+build CMakeFiles/MOTOR.dir/App/Command/motor_command.c.obj: C_COMPILER__MOTOR_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/App/Command/motor_command.c || cmake_object_order_depends_target_MOTOR
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/MOTOR.dir/App/Command/motor_command.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor -I/home/acid/Downloads/Project/motor_test_ws/App -I/home/acid/Downloads/Project/motor_test_ws/App/board -I/home/acid/Downloads/Project/motor_test_ws/App/util -I/home/acid/Downloads/Project/motor_test_ws/App/UI -I/home/acid/Downloads/Project/motor_test_ws/App/Command -I/home/acid/Downloads/Project/motor_test_ws/App/Lcd -I/home/acid/Downloads/Project/motor_test_ws/Lib/Motor/Control -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
+  OBJECT_FILE_DIR = CMakeFiles/MOTOR.dir/App/Command
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Acid_Motor
+# Link build statements for EXECUTABLE target MOTOR
 
 
 #############################################
-# Link the executable Acid_Motor.elf
+# Link the executable MOTOR.elf
 
-build Acid_Motor.elf: C_EXECUTABLE_LINKER__Acid_Motor_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/main.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/gpio.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/adc.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/opamp.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/spi.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/tim.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/usart.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_it.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/stm32g4xx_hal_msp.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/sysmem.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/syscalls.c.obj CMakeFiles/Acid_Motor.dir/startup_stm32g431xx.s.obj CMakeFiles/Acid_Motor.dir/Core/Src/bldc_foc.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/uart_debug.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/circular_buffer.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/motor_uart_control.c.obj CMakeFiles/Acid_Motor.dir/Core/Src/ma600_encoder.c.obj || cmake/stm32cubemx/STM32_Drivers
+build MOTOR.elf: C_EXECUTABLE_LINKER__MOTOR_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj CMakeFiles/MOTOR.dir/Core/Src/main.c.obj CMakeFiles/MOTOR.dir/Core/Src/stm32g4xx_it.c.obj CMakeFiles/MOTOR.dir/Core/Src/stm32g4xx_hal_msp.c.obj CMakeFiles/MOTOR.dir/Core/Src/sysmem.c.obj CMakeFiles/MOTOR.dir/Core/Src/syscalls.c.obj CMakeFiles/MOTOR.dir/startup_stm32g431xx.s.obj CMakeFiles/MOTOR.dir/App/util/motor_util.c.obj CMakeFiles/MOTOR.dir/App/motor_board.c.obj CMakeFiles/MOTOR.dir/App/motor_hal.c.obj CMakeFiles/MOTOR.dir/App/board/board_stm32g431.c.obj CMakeFiles/MOTOR.dir/Lib/Motor/motor.c.obj CMakeFiles/MOTOR.dir/Lib/Motor/motor_control.c.obj CMakeFiles/MOTOR.dir/App/Lcd/lcd_drv.c.obj CMakeFiles/MOTOR.dir/App/Lcd/lcd_font.c.obj CMakeFiles/MOTOR.dir/App/UI/motor_ui.c.obj CMakeFiles/MOTOR.dir/App/Command/motor_command.c.obj || cmake/stm32cubemx/STM32_Drivers
   CONFIG = Debug
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3
-  LINK_FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T "/home/acid/下载/Project/Acid_Motor/Software/STM32G431XX_FLASH.ld" --specs=nano.specs -Wl,-Map=Acid_Motor.map -Wl,--gc-sections -Wl,--print-memory-usage
+  LINK_FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T "/home/acid/Downloads/Project/motor_test_ws/STM32G431XX_FLASH.ld" --specs=nano.specs -Wl,-Map=MOTOR.map -Wl,--gc-sections -Wl,--print-memory-usage
   LINK_LIBRARIES = -lm
-  OBJECT_DIR = CMakeFiles/Acid_Motor.dir
+  OBJECT_DIR = CMakeFiles/MOTOR.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Acid_Motor.elf
-  TARGET_PDB = Acid_Motor.elf.dbg
-  TARGET_SUPPORT_DIR = CMakeFiles/Acid_Motor.dir
+  TARGET_FILE = MOTOR.elf
+  TARGET_PDB = MOTOR.elf.dbg
+  TARGET_SUPPORT_DIR = CMakeFiles/MOTOR.dir
+
+
+#############################################
+# Utility command for flash-dap
+
+build flash-dap: phony CMakeFiles/flash-dap MOTOR.elf
+
+
+#############################################
+# Utility command for flash-openocd
+
+build flash-openocd: phony CMakeFiles/flash-openocd MOTOR.elf
+
+
+#############################################
+# Utility command for flash-dap-hid
+
+build flash-dap-hid: phony CMakeFiles/flash-dap-hid MOTOR.elf
+
+
+#############################################
+# Utility command for flash-dap-bulk
+
+build flash-dap-bulk: phony CMakeFiles/flash-dap-bulk MOTOR.elf
+
+
+#############################################
+# Utility command for flash-dap-reset
+
+build flash-dap-reset: phony CMakeFiles/flash-dap-reset MOTOR.elf
+
+
+#############################################
+# Utility command for flash-dap-powercycle
+
+build flash-dap-powercycle: phony CMakeFiles/flash-dap-powercycle MOTOR.elf
+
+
+#############################################
+# Utility command for flash-stlink
+
+build flash-stlink: phony CMakeFiles/flash-stlink MOTOR.elf
+
+
+#############################################
+# Utility command for flash-stlink-ur
+
+build flash-stlink-ur: phony CMakeFiles/flash-stlink-ur MOTOR.elf
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/acid/下载/Project/Acid_Motor/Software/build/Debug && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/ccmake -S/home/acid/下载/Project/Acid_Motor/Software -B/home/acid/下载/Project/Acid_Motor/Software/build/Debug
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/ccmake -S/home/acid/Downloads/Project/motor_test_ws -B/home/acid/Downloads/Project/motor_test_ws/build/Debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -256,16 +294,88 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/acid/下载/Project/Acid_Motor/Software/build/Debug && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake --regenerate-during-build -S/home/acid/下载/Project/Acid_Motor/Software -B/home/acid/下载/Project/Acid_Motor/Software/build/Debug
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake --regenerate-during-build -S/home/acid/Downloads/Project/motor_test_ws -B/home/acid/Downloads/Project/motor_test_ws/build/Debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Custom command for CMakeFiles/flash-dap
+
+build CMakeFiles/flash-dap | ${cmake_ninja_workdir}CMakeFiles/flash-dap: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /usr/bin/openocd -f /home/acid/Downloads/Project/motor_test_ws/tools/openocd_cmsis_dap.cfg -c init -c halt -c program\ /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf\ verify -c reset\ run -c shutdown
+  DESC = Flash with OpenOCD using CMSIS-DAP
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/flash-openocd
+
+build CMakeFiles/flash-openocd | ${cmake_ninja_workdir}CMakeFiles/flash-openocd: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /usr/bin/openocd -f /home/acid/Downloads/Project/motor_test_ws/tools/openocd_cmsis_dap.cfg -c init -c halt -c program\ /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf\ verify -c reset\ run -c shutdown
+  DESC = Flash with OpenOCD using CMSIS-DAP
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/flash-dap-hid
+
+build CMakeFiles/flash-dap-hid | ${cmake_ninja_workdir}CMakeFiles/flash-dap-hid: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /usr/bin/openocd -f /home/acid/Downloads/Project/motor_test_ws/tools/openocd_cmsis_dap.cfg -c cmsis_dap_backend\ hid -c init -c halt -c program\ /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf\ verify -c reset\ run -c shutdown
+  DESC = Flash with OpenOCD using CMSIS-DAP HID backend
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/flash-dap-bulk
+
+build CMakeFiles/flash-dap-bulk | ${cmake_ninja_workdir}CMakeFiles/flash-dap-bulk: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /usr/bin/openocd -f /home/acid/Downloads/Project/motor_test_ws/tools/openocd_cmsis_dap.cfg -c cmsis_dap_backend\ usb_bulk -c init -c halt -c program\ /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf\ verify -c reset\ run -c shutdown
+  DESC = Flash with OpenOCD using CMSIS-DAP USB bulk backend
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/flash-dap-reset
+
+build CMakeFiles/flash-dap-reset | ${cmake_ninja_workdir}CMakeFiles/flash-dap-reset: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /usr/bin/openocd -f /home/acid/Downloads/Project/motor_test_ws/tools/openocd_cmsis_dap_under_reset.cfg -c init -c reset\ halt -c program\ /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf\ verify -c reset\ run -c shutdown
+  DESC = Flash with OpenOCD using CMSIS-DAP connect-under-reset
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/flash-dap-powercycle
+
+build CMakeFiles/flash-dap-powercycle | ${cmake_ninja_workdir}CMakeFiles/flash-dap-powercycle: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /usr/bin/bash /home/acid/Downloads/Project/motor_test_ws/tools/flash_dap_powercycle.sh /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf
+  DESC = Flash with CMSIS-DAP by repeatedly trying while the target is power-cycled
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/flash-stlink
+
+build CMakeFiles/flash-stlink | ${cmake_ninja_workdir}CMakeFiles/flash-stlink: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /usr/bin/openocd -f /home/acid/Downloads/Project/motor_test_ws/tools/openocd_stlink_under_reset.cfg -c program\ /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf\ verify\ reset\ exit
+  DESC = Flash with OpenOCD using ST-Link connect-under-reset
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/flash-stlink-ur
+
+build CMakeFiles/flash-stlink-ur | ${cmake_ninja_workdir}CMakeFiles/flash-stlink-ur: CUSTOM_COMMAND MOTOR.elf || MOTOR.elf cmake/stm32cubemx/STM32_Drivers
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug && /opt/stm32cubeclt/STM32CubeProgrammer/bin/STM32_Programmer_CLI -c port=SWD mode=UR reset=HWrst freq=1000 -w /home/acid/Downloads/Project/motor_test_ws/build/Debug/MOTOR.elf -v -rst
+  DESC = Flash with STM32CubeProgrammer using under-reset mode
+  pool = console
+
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/acid/下载/Project/Acid_Motor/Software/CMakeLists.txt
+# /home/acid/Downloads/Project/motor_test_ws/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -277,252 +387,232 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_STM32_Drivers: phony || .
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Core/Src/system_stm32g4xx.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Core/Src/system_stm32g4xx.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp.c || cmake_object_order_depends_target_STM32_Drivers
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
-  TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp_ex.c || cmake_object_order_depends_target_STM32_Drivers
-  CONFIG = Debug
-  DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
-  DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp_ex.c.obj.d
-  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
-  OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-  OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
-  TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/下载/Project/Acid_Motor/Software/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug /home/acid/Downloads/Project/motor_test_ws/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c || cmake_object_order_depends_target_STM32_Drivers
   CONFIG = Debug
   DEFINES = -DDEBUG -DSTM32G431xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -fdata-sections -ffunction-sections -fstack-usage -O0 -g3 -std=gnu11
-  INCLUDES = -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Core/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/../../Drivers/CMSIS/Include
+  INCLUDES = -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Core/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I/home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/../../Drivers/CMSIS/Include
   OBJECT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src
   TARGET_SUPPORT_DIR = cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
@@ -532,14 +622,14 @@ build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL
 #############################################
 # Object library STM32_Drivers
 
-build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_opamp_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
+build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32g4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_adc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_adc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_uart_ex.c.obj
 
 
 #############################################
 # Utility command for edit_cache
 
 build cmake/stm32cubemx/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/acid/下载/Project/Acid_Motor/Software/build/Debug/cmake/stm32cubemx && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/ccmake -S/home/acid/下载/Project/Acid_Motor/Software -B/home/acid/下载/Project/Acid_Motor/Software/build/Debug
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug/cmake/stm32cubemx && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/ccmake -S/home/acid/Downloads/Project/motor_test_ws -B/home/acid/Downloads/Project/motor_test_ws/build/Debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -551,7 +641,7 @@ build cmake/stm32cubemx/edit_cache: phony cmake/stm32cubemx/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build cmake/stm32cubemx/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/acid/下载/Project/Acid_Motor/Software/build/Debug/cmake/stm32cubemx && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake --regenerate-during-build -S/home/acid/下载/Project/Acid_Motor/Software -B/home/acid/下载/Project/Acid_Motor/Software/build/Debug
+  COMMAND = cd /home/acid/Downloads/Project/motor_test_ws/build/Debug/cmake/stm32cubemx && /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake --regenerate-during-build -S/home/acid/Downloads/Project/motor_test_ws -B/home/acid/Downloads/Project/motor_test_ws/build/Debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -561,7 +651,7 @@ build cmake/stm32cubemx/rebuild_cache: phony cmake/stm32cubemx/CMakeFiles/rebuil
 # =============================================================================
 # Target aliases.
 
-build Acid_Motor: phony Acid_Motor.elf
+build MOTOR: phony MOTOR.elf
 
 build STM32_Drivers: phony cmake/stm32cubemx/STM32_Drivers
 
@@ -571,14 +661,14 @@ build STM32_Drivers: phony cmake/stm32cubemx/STM32_Drivers
 # =============================================================================
 
 #############################################
-# Folder: /home/acid/下载/Project/Acid_Motor/Software/build/Debug
+# Folder: /home/acid/Downloads/Project/motor_test_ws/build/Debug
 
-build all: phony Acid_Motor.elf cmake/stm32cubemx/all
+build all: phony MOTOR.elf cmake/stm32cubemx/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/acid/下载/Project/Acid_Motor/Software/build/Debug/cmake/stm32cubemx
+# Folder: /home/acid/Downloads/Project/motor_test_ws/build/Debug/cmake/stm32cubemx
 
 build cmake/stm32cubemx/all: phony cmake/stm32cubemx/STM32_Drivers
 
@@ -589,14 +679,14 @@ build cmake/stm32cubemx/all: phony cmake/stm32cubemx/STM32_Drivers
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/acid/下载/Project/Acid_Motor/Software/build/Debug/cmake_install.cmake /home/acid/下载/Project/Acid_Motor/Software/build/Debug/cmake/stm32cubemx/cmake_install.cmake: RERUN_CMAKE | /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeASMInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCXXInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeGenericSystem.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-ASM.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-C.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeASMLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Platform/Generic.cmake /home/acid/下载/Project/Acid_Motor/Software/CMakeLists.txt /home/acid/下载/Project/Acid_Motor/Software/cmake/gcc-arm-none-eabi.cmake /home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/CMakeLists.txt CMakeCache.txt CMakeFiles/4.2.3/CMakeASMCompiler.cmake CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
+build build.ninja /home/acid/Downloads/Project/motor_test_ws/build/Debug/cmake_install.cmake /home/acid/Downloads/Project/motor_test_ws/build/Debug/cmake/stm32cubemx/cmake_install.cmake: RERUN_CMAKE | /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeASMInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCXXInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeGenericSystem.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-ASM.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-C.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeASMLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Platform/Generic.cmake /home/acid/Downloads/Project/motor_test_ws/CMakeLists.txt /home/acid/Downloads/Project/motor_test_ws/cmake/gcc-arm-none-eabi.cmake /home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/CMakeLists.txt CMakeCache.txt CMakeFiles/4.2.3/CMakeASMCompiler.cmake CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeASMInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCXXInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeGenericSystem.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-ASM.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-C.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeASMLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Platform/Generic.cmake /home/acid/下载/Project/Acid_Motor/Software/CMakeLists.txt /home/acid/下载/Project/Acid_Motor/Software/cmake/gcc-arm-none-eabi.cmake /home/acid/下载/Project/Acid_Motor/Software/cmake/stm32cubemx/CMakeLists.txt CMakeCache.txt CMakeFiles/4.2.3/CMakeASMCompiler.cmake CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
+build /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeASMInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCXXInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeGenericSystem.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/CMakeSystemSpecificInitialize.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-ASM.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-C.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Compiler/GNU.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeASMLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/share/cmake-4.2/Modules/Platform/Generic.cmake /home/acid/Downloads/Project/motor_test_ws/CMakeLists.txt /home/acid/Downloads/Project/motor_test_ws/cmake/gcc-arm-none-eabi.cmake /home/acid/Downloads/Project/motor_test_ws/cmake/stm32cubemx/CMakeLists.txt CMakeCache.txt CMakeFiles/4.2.3/CMakeASMCompiler.cmake CMakeFiles/4.2.3/CMakeCCompiler.cmake CMakeFiles/4.2.3/CMakeCXXCompiler.cmake CMakeFiles/4.2.3/CMakeSystem.cmake: phony
 
 
 #############################################

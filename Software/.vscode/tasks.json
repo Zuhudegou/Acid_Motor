@@ -4,9 +4,22 @@
         {
             "label": "Build Only",
             "type": "shell",
-            "command": "cmake --build ${workspaceFolder}/build/Debug",
+            "command": "cmake --build ${workspaceFolder}/build",
             "problemMatcher": "$gcc",
             "group": "build"
+        },
+        {
+            "label": "SWD Link Check (Safe)",
+            "type": "shell",
+            "command": "openocd",
+            "args": [
+                "-f", "interface/cmsis-dap.cfg",
+                "-f", "target/stm32g4x.cfg",
+                "-c", "adapter speed 50",
+                "-c", "reset_config srst_only srst_nogate connect_assert_srst",
+                "-c", "init; reset halt; exit"
+            ],
+            "problemMatcher": []
         },
         {
             "label": "Build & Flash",
@@ -15,7 +28,9 @@
             "args": [
                 "-f", "interface/cmsis-dap.cfg",
                 "-f", "target/stm32g4x.cfg",
-                "-c", "program ${workspaceFolder}/build/Debug/${workspaceFolderBasename}.elf verify reset exit"
+                "-c", "adapter speed 100",
+                "-c", "reset_config srst_only srst_nogate connect_assert_srst",
+                "-c", "program ${workspaceFolder}/build/${workspaceFolderBasename}.elf verify reset exit"
             ],
             "dependsOn": "Build Only",
             "group": {
@@ -32,6 +47,8 @@
             "args": [
                 "-f", "interface/cmsis-dap.cfg",
                 "-f", "target/stm32g4x.cfg",
+                "-c", "adapter speed 50",
+                "-c", "reset_config srst_only srst_nogate connect_assert_srst",
                 "-c", "init; reset halt; stm32g4x unlock 0; reset halt; exit"
             ],
             "problemMatcher": []

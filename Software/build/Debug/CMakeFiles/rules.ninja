@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: Acid_Motor
+# Project: MOTOR
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER__Acid_Motor_unscanned_Debug
+rule ASM_COMPILER__MOTOR_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/home/acid/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule ASM_COMPILER__Acid_Motor_unscanned_Debug
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__Acid_Motor_unscanned_Debug
+rule C_COMPILER__MOTOR_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/home/acid/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -34,7 +34,7 @@ rule C_COMPILER__Acid_Motor_unscanned_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__Acid_Motor_Debug
+rule C_EXECUTABLE_LINKER__MOTOR_Debug
   command = $PRE_LINK && /home/acid/.local/share/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
@@ -62,7 +62,7 @@ rule C_COMPILER__STM32_Drivers_unscanned_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake --regenerate-during-build -S/home/acid/下载/Project/Acid_Motor/Software -B/home/acid/下载/Project/Acid_Motor/Software/build/Debug
+  command = /home/acid/.local/share/stm32cube/bundles/cmake/4.2.3+st.1/bin/cmake --regenerate-during-build -S/home/acid/Downloads/Project/motor_test_ws -B/home/acid/Downloads/Project/motor_test_ws/build/Debug
   description = Re-running CMake...
   generator = 1
 

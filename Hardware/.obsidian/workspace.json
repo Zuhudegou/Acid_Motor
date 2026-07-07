@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "25756a6430341d18",
@@ -181,9 +180,15 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
   "active": "3d7a66306f3b66d6",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Drawing 2026-04-09 16.32.58.excalidraw.md",
+    "Acid_Motor硬件概述.md",
+    "Acid_Motor硬件概述.html"
+  ]
 }
